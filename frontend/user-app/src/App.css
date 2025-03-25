@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the main container */
+.app-container {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style the heading */
+.app-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1e313b;
+}
+
+/* Style the total projects text */
+.app-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Style the error message */
+.app-container .error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+/* Style the form */
+.app-container form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.app-container input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 70%;
+}
+
+/* Style the buttons */
+.app-container button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Add Project button */
+.app-container button[type="submit"] {
+  background-color: #1a3c5e;
+  color: white;
+}
+
+.app-container button[type="submit"]:hover {
+  background-color: #2a5c8e;
+}
+
+/* Refresh Projects button */
+.app-container .refresh-btn {
+  background-color: #9c0505;
+  color: white;
+  padding: 10px 20px;
+}
+
+.app-container .refresh-btn:hover {
+  background-color: #cf1414;
+}
+
+/* Delete button */
+.app-container .delete-btn {
+  background-color: #282424;
+  color: white;
+  padding: 5px 15px;
+  font-size: 0.9rem;
+}
+
+.app-container .delete-btn:hover {
+  background-color: #4f4b4b;
+}
+
+/* Style the project list */
+.app-container ul {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.app-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  margin-bottom: 5px; /* Reduced gap between list items */
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+}
